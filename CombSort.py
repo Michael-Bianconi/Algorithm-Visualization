@@ -39,5 +39,6 @@ list = random.sample(range(1, 101), 50)
 rects = plt.bar(np.arange(len(list)),list,
 				align='edge',color='black',
 				width=0.5)
+plt.title("Comb Sort")
 sort(list)
 plt.show()
