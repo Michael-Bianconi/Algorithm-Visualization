@@ -16,7 +16,7 @@ def find(list):
 		if i-1 != high_index:
 			rects[i-1].set_color('black')
 		plt.pause(0.1)
-		if x > high:
+		if x >= high:
 			rects[high_index].set_color('black')
 			rects[i].set_color('red')
 			plt.pause(0.1)
