@@ -42,6 +42,8 @@ def swap(list, a, b):
 	list[a], list[b] = list[b], list[a]
 	
 list = random.sample(range(1, 101), 50)
-rects = plt.bar(np.arange(len(list)),list,align='edge',color='black')
+rects = plt.bar(np.arange(len(list)),list,
+				align='edge',color='black',
+				width=0.5)
 sort(list, 0, len(list)-1)
 plt.show()
