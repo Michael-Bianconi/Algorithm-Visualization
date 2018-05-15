@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import random
 
-def sort(list,graph):
+def sort(list):
 	i = 1
 
 	for i in range(len(list)):
@@ -33,6 +33,6 @@ list = random.sample(range(1, 101), 50)
 rects = plt.bar(np.arange(len(list)),list,
 				align='edge',color='black',
 				width=0.5)
-sort(list,rects)
+sort(list)
 plt.show()
 		
