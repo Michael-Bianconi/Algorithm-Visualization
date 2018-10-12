@@ -12,8 +12,6 @@ def recursive_sort(a,i,k):
     if i >= k: return
     m = floor((i+k)/2)
     
-    print('%s, %s, %s' % (i,k,m))
-    
     recursive_sort(a,i,m)
     recursive_sort(a,m+1,k)
     if a[k] < a[m]:
